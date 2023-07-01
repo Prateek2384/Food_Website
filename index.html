@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            A website
+        </title>
+        <style>
+            #yes{
+                font-family: 'Fasthand', cursive;
+            }
+            #blue{
+                background-color: purple;
+                border-color: purple;
+            }
+            #don{
+                border-radius: 5%;
+            }
+            .gradient-background {
+                background: linear-gradient(300deg, #00bfff, #37d6b1, #e4e80c);
+                background-size: 180% 180%;
+                animation: gradient-animation 18s ease infinite;
+}
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <div class="px-3 py-2 text-bg-dark border-bottom">
+              <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                  <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <img src="./Screenshot 2023-06-27 234531.png" alt="" height="50px" class="bi me-3">
+                    <span class="fs-1 " id="yes">The Foodies</span>
+                  </a>
+        
+                  <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                      <a href="#" class="nav-link text-secondary">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"></use></svg>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                        Orders
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                        Products
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                        Customers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="px-3 py-2 border-bottom mb-3">
+              <div class="container d-flex flex-wrap justify-content-center">
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="">
+                  <input type="search" class="form-control" placeholder="Search " aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-light text-dark me-2">Login</button>
+                  <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 ps-2 pe-2 mb-5">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./crispy-mixed-pizza-with-olives-sausage.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-2">Try any Pizza at Just Rs.99</h5>
+                  <p>Offer is applicaple only on 1st order.For more information check <a href="#">Terms and Conditions</a>. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./pexels-daniel-reche-3616956.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 CLASS="fs-2">Try any Burger with fries at Just Rs.49</h5>
+                  <p>Offer is applicaple only on 1st order.For more information check <a href="#">Terms and Conditions</a>. </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./4c8957451dfdfb99aad3024df37175a6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Try Indian Dishes</h5>
+                  <p class="text-bg-dark">Indian food is our pride.Please visit us "Dhanyavaad"</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="container my-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center ">
+              <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                <img src="./logo2.png" alt="" height="100px" width="100px">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Welcome
+                  to The Foodies</h1>
+                <p class="lead">With a vision of bringing Indian Cuisine back “in-Vogue”,The Foodies endeavours to showcase a unique, modernist approach to Indian food, where guests not only enjoy culinary innovations as part of it’s...</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start  h-25 mb-4 mb-lg-3" >
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold w-50" id="blue">Find Out More</button>
+                  
+                </div>
+              </div>
+              <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden  ">
+                  <img class="rounded-lg-3" src="./Food-Transparent-Image (1).png" alt="" width="400px" height="200px" id="yaar">
+              </div>
+            </div>
+          </div>
+          <div class="container marketing">
+            <div class="mb-5 fw-bold">
+            <h1>Most Recommended</h1>
+        </div>
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="./Places-To-Eat-The-Delicious-Dal-Bati-Churma-In-Jaipur.jpg" alt="" height="200px" width="300px" id="don">
+                <h2 class="fw-normal">Dal-bati Churma</h2>
+                <p>This three-in-one delight (baked baati with spicy panchmel dal and sweet crumbly churma) is renowned for both its superb flavour and ease of preparation.</p>
+                <p><a class="btn btn-success" href="#" id="blue">Add to Cart »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img src="./R.jpg" alt="" height="200px" width="300px" id="don">
+                <h2 class="fw-normal">Pav Bhaji </h2>
+                <p>When it comes to good pav bhaji Mumbai streets are the best place to get it. This recipe gives you all the satisfaction of the tantalizing flavours of pav bhaji.</p>
+                <p><a class="btn btn-success" href="#" id="blue">Add to Cart »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img src="./OIP.jpg" alt="" id="don" height="200px" width="300px">
+                <h2 class="fw-normal">Khaman Dhokla</h2>
+                <p>Dhokla (also known as dhokra) is a typical dish of Indian cuisine served as a rule as a fast food in the state of Gujarat.1 This is a sourdough of riceand chickpeas that can be eaten as a breakfast or snack.</p>
+                <p><a class="btn btn-success" href="#" id="blue">Add to Cart »</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        
+        
+            <!-- START THE FEATURETTES -->
+        
+            
+            <!-- /END THE FEATURETTES -->
+        
+          </div>
+          <div class="container col-xxl-8 px-4 py-5 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./cnjwv.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <img src="./logo2.png" alt="" height="100px" class="bi mb-2">
+                <span class="fs-1" id="yes">The Foodies</span>
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Order for
+                    Home-Delivered Smiles</h1>
+                <p class="lead">We deliver to your doorstep TF-Delivery allows you to experience delicious The Foodies food from the comfort of your sofa at home or cubicle in office. All orders are delivered quickly and efficiently, allowing you the peace of mind to know that smiles-inducing food is never too far.</p>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start ">
+                  <button type="button" class="btn btn-primary  btn-lg px-4 me-md-2 " id="blue">Order Now</button>
+                  
+                  </div>
+                  
+                    <div class="container">
+                  <div class="mt-4 row ">
+                    <div class="col-4 ">
+                        <p class="fw-bolder d-flex align-content-center pt-2 ">Now also on:</p>
+                    </div>
+                    <div class=" col-1 me-5">
+                        <img src="./Swiggy-Logo.png" alt="" height="50px" width="100px">
+                        
+                    </div>
+                    <div class="col-2 ">
+                        <img src="./zomato-logo-1.png" alt="" height="50px" width="50px">
+                    </div>
+                    <div class="col-2">
+                        <img src="./magicpin-logo.png" alt="" height="50px" width="150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+                   
+            
+          </div>
+        
+        </div>
+        </div>
+        <div class="porto-wrap-container container gradient-background rounded-3">
+          <div class="row">
+            <div class="vc_column_container col-md-12">
+              <div class="wpb_wrapper vc_column-inner">
+                <div class="vc_row wpb_row vc_inner row justify-content-center mb-5">
+                  <div class="vc_column_container col-md-9 col-lg-6">
+                    <div class="wpb_wrapper vc_column-inner">
+                      <h2 style="font-size: 35px; line-height: 1.2; text-align: center; font-weight: 700; animation-duration: 500ms;" data-appear-animation="maskUp" data-appear-animation-duration="500" class="vc_custom_heading mb-3 appear-animation maskUp appear-animation-visible pt-3">CONTACT US</h2>
+          <div class="porto-animation  margin-auto"><div class="porto-separator  "><hr class="separator-line  align_center solid " style="background-color:#ab8b65;height:4px;width:100%;"></div></div><p style="font-size: 16.8px; line-height: 32px; text-align: center; animation-duration: 500ms;" data-appear-animation="fadeInUp" data-appear-animation-duration="500" class="vc_custom_heading appear-animation fadeInUp appear-animation-visible">We'd love to hear from you</p></div></div></div></div></div><div class="vc_column_container col-md-4"><div class="wpb_wrapper vc_column-inner">
+          <div class="wpb_text_column wpb_content_element ">
+            <div class="wpb_wrapper">
+              <p><b>The Foodies Corporate Office</b><br>
+                The Foodies Center, opposite IIT Delhi, Block C 6, Hauz Khas Enclave, Hauz Khas, New Delhi, Delhi[INDIA]<br>
+        <b>Phone:&nbsp;</b>8826211254</p>
+        
+        
+            </div>
+          </div>
+        </div></div><div class="vc_column_container col-md-8"><div class="wpb_wrapper vc_column-inner"><div role="form" class="wpcf7" id="wpcf7-f6-p2-o1" lang="en-US" dir="ltr">
+        <div class="screen-reader-response"></div>
+        <form action="/#wpcf7-f6-p2-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div style="display: none;">
+        <input type="hidden" name="_wpcf7" value="6">
+        <input type="hidden" name="_wpcf7_version" value="5.1.4">
+        <input type="hidden" name="_wpcf7_locale" value="en_US">
+        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f6-p2-o1">
+        <input type="hidden" name="_wpcf7_container_post" value="2">
+        <input type="hidden" name="g-recaptcha-response" value="03AAYGu2RtNrcYLBjmQYoAyUc91X3WhZ99m_7NFHu44r6uA4_5rfUEOK9gdFkSg7of70QhpnuP0doSwXypTshMWKvpm0KUmzi-qxFIONA9pT4MtViQ3i-Z2ODfmwfSTYNSUdvPvLoD5nYILXwef-pyFAc_7_hohI1h7Dohm38CRMxQxGH-WDPF2zzdzLRUqHjloDZIt3Zeakssw8O6prKYYzpgORhQn8-TxYBh0hl6aaZdiPO1G2w9yGwUOYDaf4ssql81WxfIKLZFjbmnj51SexfjOIFczK8hGnYg2bOfthnJ--LtoO0Knz6Oyc9N5KZ4XYZKudXZ84OSL9iM0DeDK8AfXY1cOzQcRZWCt5nNVYbvMba92lDqpXdkp9_qoiaB3iVXZpjf6uxboNCpRaRtbxSp_JMYfIAkVLOO7fQh3NPLL-Oc3hoCNgnzkODNvFXQ0rRS9RgKGyFFWQQorwXo8js5Xtb-tnRDBStvxxKzHireCghe8lx8VMPUaIUTzPasi1jtsSPt_DYlRjR2egNVHXmf_0ioN4ev_A">
+        </div>
+        <div class="row">
+        <div class="col-md-6">
+        <label> Your Name (required)<br>
+            <span class="wpcf7-form-control-wrap your-name "><input type="text" name="your-name " value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></span> </label>
+        </div>
+        <div class="col-md-6">
+        <label> Subject<br>
+            <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false"></span> </label>
+        </div>
+        <div class="col-md-6">
+        <label> Your Email (required)<br>
+            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"></span> </label>
+        </div>
+        <div class="col-md-6">
+        <label> Your Phone (required)<br>
+            <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false"></span> </label>
+        </div>
+        </div>
+        <p><label> Your Message<br>
+            <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="4" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" data-gramm="false" wt-ignore-input="true"></textarea></span> </label></p>
+        <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+      
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img src="./logo2.png" alt="" height="50" width="50">
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2023 The Foodies, Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="https://instagram.com/maverick_prateek?igshid=MzNlNGNkZWQ4Mg=="><img src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg" alt="" height="30" width="30"></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/prateek.swami.520"><img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="" height="30" width="30"></a></li>
+            </ul>
+          </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+      
+              
+          
+                  
+                
+    </body>
+</html>
